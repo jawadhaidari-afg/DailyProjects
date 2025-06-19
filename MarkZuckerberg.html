@@ -8,35 +8,38 @@
 </head>
 <style>
     body {
-        background-color:gray;
+        background-color: gray;
         /* border: 2px solid black; */
         display: flex;
     }
-    .white{
-        position:absolute;
-        margin-top:70vh;
-        margin-left:0;
-        margin-right:0;
+
+    .white {
+        position: absolute;
+        margin-top: 70vh;
+        margin-left: 0;
+        margin-right: 0;
         height: 200px;
-        width:100%;
+        width: 100%;
     }
-    .parent-child{
+
+    .parent-child {
         background-color: #fff;
-        position:absolute;
+        position: absolute;
         height: 70vh;
-        width:80vw;
-        margin-top:30vh;
+        width: 80vw;
+        margin-top: 30vh;
         /* justify-content: center; */
         /* align-items: center; */
         margin-left: 9vw;
         /* text-shadow: 5px; */
         /* border: 1px solid blue; */
-        
+
     }
-    div > div > div > div img {
-        position:absolute;
+
+    div>div>div>div img {
+        position: absolute;
         height: 45vh;
-        width:45vh;
+        width: 45vh;
         /* justify-content: center; */
         /* align-items: center; */
         /* margin-bottom: 100px; */
@@ -45,30 +48,45 @@
         padding-right: 26vw;
 
     }
-  .text {
-    position: absolute;
-    margin-top: 47vh;
-    text-align: center;
-    font-size: large;
-    color: #000;
-    
-  }
+
+    .text {
+        position: absolute;
+        margin-top: 47vh;
+        text-align: center;
+        /* font-size: large; */
+        color: #000;
+        border: 1px solid black;
+        background-color: lightblue;
+        margin-left: 35vw;
+
+    }
 </style>
 
 <body>
-    
-   <div class="parent">
-        <div class="edges">
-        <div class="white" style="background-color:white"></div>
-        <div class="parent-child">
 
-            <div class="parent child grandchild"></div>
-            <div><img src="barack-obama.jpg" alt="Mark Zuckerberg" >
-            <p class="text">F PROFILE</p>
-            <p class="text">MARK Zuckerberg</p>     <!-- text part is left, will work on it tomorrow. -->
- 
+    <div class="parent">
+        <div class="edges">
+            <div class="white" style="background-color:white"></div>
+            <div class="parent-child">
+
+                <div class="parent child grandchild"></div>
+                <div><img src="barack-obama.jpg" alt="Mark Zuckerberg">
+                    <div class="text">
+                        <p>
+                            <storng>F</storng> PROFILE
+                        </p>
+                        <h2>MARK Zuckerberg</h2>
+                        <P>Cofounder, Meta Platforms </P>
+                        <h1 style="display: inline;">$241.7B</h1>
+                        <h5>real Time Net Worth <h5>
+                                <p style="font-weight: 100; padding: 10px;">as of 6/9/25</p>
+                                <p style="">#2 in the world today</p>
+                                <h5>$875M (0.36%)</h5>
+                    </div>
+                    <!-- <p class="text">MARK Zuckerberg</p>     text part is left, will work on it tomorrow. -->
+
+                </div>
             </div>
-        </div>    
         </div>
 
     </div>
