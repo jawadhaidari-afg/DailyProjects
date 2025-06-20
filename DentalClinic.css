@@ -1,0 +1,47 @@
+body{
+    background-color: #797b83;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    position: relative;
+}
+/* .Div {
+    background-color: azure;
+    color: white;
+    display: inline-block;
+} */
+.DivDiv1 {
+    background-color: rgb(244, 248, 248);
+    display:block;
+    border: 1px solid black;
+    /* position:absolute; */
+    width: 100vw;
+    height: auto;
+    padding-top:7vw;
+    padding-left: 10vw;
+    position:absolute;
+}
+.FirstDiv{
+    display: inline-block;
+    border: 1px solid black;
+    margin-left: 30px;
+    padding: 7px;
+    background-color: bisque;
+      /* Last line of First DivDiv1 CSS Styling Section Done */
+}
+.DivDiv2 {
+    background-color: powderblue;
+    border: 1px solid black;
+    position: relative;
+}
+.card1, .card2, .card3, .card4 {
+    background-color:rgb(158, 56, 19);
+    color: rgb(219, 201, 201);
+    position: absolute;
+    width: 200px;
+    display: block;
+    float: left;
+
+
+
+}
