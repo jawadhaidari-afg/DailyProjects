@@ -1,19 +1,22 @@
 body{
-    background-color: #797b83;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
+    overflow-y: scroll;
+    overflow-x:hidden;
     /* display: flex; */
-    position: relative;
+    /* position: relative; */
 }
 /* .Div {
     background-color: azure;
     color: white;
     display: inline-block;
+    
 } */
 .DivDiv1 {
-    background-color: rgb(244, 248, 248);
+    /* background-color: rgb(244, 248, 248); */
     display:block;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* position:absolute; */
     width: 100vw;
     height: auto;
@@ -26,22 +29,90 @@ body{
     border: 1px solid black;
     margin-left: 30px;
     padding: 7px;
-    background-color: bisque;
+    background-color: rgb(146, 130, 109);
       /* Last line of First DivDiv1 CSS Styling Section Done */
 }
+.FirstDiv:hover {
+    background-color: #ffffff;
+}
 .DivDiv2 {
-    background-color: powderblue;
-    border: 1px solid black;
+    /* background-color: powderblue; */
+    /* border: 1px solid black; */
     position: relative;
+    /* margin-top: 40vh; */
 }
 .card1, .card2, .card3, .card4 {
     background-color:rgb(158, 56, 19);
-    color: rgb(219, 201, 201);
-    position: absolute;
-    width: 200px;
-    display: block;
+    color: rgb(243, 238, 238);
+    /* position: absolute; */
+    width: 20vw;
+    display:inline-block;
     float: left;
+    /* padding-left: 10px; */
+    margin-left: 3.6vw;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.DivDiv3 {
+    /* background-color: rgb(123, 161, 161); */
+    border: 1px solid black;
+    /* display: block; */
+    /* position: relative; */
+    /* for temporary to design the DivDiv4 */
+}
+.Header2{
+    display: block;
+    /* position: absolute; */
+    /* margin-top: 30vh; */
+    /* width: 20vw; */
+   border:1px solid black;
+   text-align: center;
+   font-size: 2rem;
 
+}
+.circle1, .circle2, .circle3, .circle4 {
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid black; */
+    width: 45%;
+     float: left;
+     margin-left: 3vw;
+}
+.DivDiv4 {
+    background-color: rgb(155, 139, 139);
+    /* border: 1px solid black; */
+    padding-left: 5vw;
+    position:relative;
+}
+.DivDiv4 > h1 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: thick;
+}
+.DivDiv4 > h4 {
+    font-family: 'Courier New', Courier, monospace;
+}
+.DivDiv4 > p {
+    display: inline ;
+    /* position: absolute; */
+    width: 45%;
+    float: left;
+    padding-left: 3vw;
+}
 
-
+.DivDiv5 {
+    /* background-color: rgb(255, 255, 255); */
+    margin-left: 4vw;
+}
+.Header3 {
+    text-align: center;
+    display: block;
+}
+.LastDiv1, .LastDiv2, .LastDiv3 {
+    display: inline;
+    width: 30%;
+    float: left;
+    background: orangered;
+    /* border: 1px solid black; */
+    margin-left: 2vw;
+    padding:8px;
 }
