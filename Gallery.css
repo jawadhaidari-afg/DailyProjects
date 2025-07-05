@@ -1,0 +1,63 @@
+
+.Main {
+            margin: 0;
+            padding: 0;
+            display: felx;
+            justify-content: center;
+            align-items: center;
+            overflow: none;
+            /* background-color: antiquewhite; */
+            /* border: 1px solid black; */
+        }
+        .CardBox {
+            margin-top:20vh;
+        }
+        .Top {
+            /* background-color: aqua;
+            border:1px solid blue; */
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 22vw;
+            margin-top:0vh;
+            /* margin-right:90px; */
+            /* padding-right: 90px; */
+            /* gap: 90px; */
+            /* border-radius: 10px; */
+            /* transform:translate(0 -100px) */
+        }
+        .Middle {
+             /* background-color: aqua; */
+            /* border:1px solid rgb(97, 97, 112); */
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 120px; */
+            /* gap: 90px; */
+            /* position:fixed;
+            top:30.5%;
+            left:31.3%; */
+             display: inline-flex;
+            justify-content: center;
+            /* align-items: center; */
+            margin-left: 30vw;
+            margin-top:vh;
+        }
+        .Bottom {
+              /* background-color: aqua;
+            border:1px solid blue; */
+            display: absolute;
+            justify-content: center;
+            align-items: center;
+            margin-left: 25vw;
+            margin-top:12vh;
+            /* margin-right:90px; */
+            /* padding-right: 90px; */
+            /* gap: 90px; */
+            /* border-radius: 10px; */
+            /* transform:translate(0 -100px) */
+        }
+        .CardImage1:hover, .CardImage2:hover, .CardImage3:hover, .CardImage4:hover, .CardImage5:hover, .CardImage1:hover, .CardImage6:hover, .CardImage7:hover, .CardImage8:hover {
+            transform: scale(1.5);
+            border: 2px solid powderblue;
+        }

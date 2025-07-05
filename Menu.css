@@ -1,0 +1,27 @@
+#Main{
+    width: 95%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: powderblue;
+}
+.Card {
+    display: inline-block;
+    height: 20vh;
+    width: 30vw;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    /* margin-left: 2.5vw; */
+
+}
+.Image1
+.qoute1 {
+    display: grid;
+    border: 1px solid rgb(29, 47, 49);
+    padding-left: 10px;
+    /* padding-top: 18%; */
+
+}
