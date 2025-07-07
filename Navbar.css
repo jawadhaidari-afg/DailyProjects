@@ -19,9 +19,12 @@ li a{
     padding: 18px 20px;
     text-decoration: none;
     color: white;
-   
-   
-    
+}
+li > img {
+    background-color: rgb(66, 93, 169);
+    position: fixed;
+    top: 18px;
+    right: 20px;
 }
 li a:hover {
    background-color: rgb(48, 69, 131);
