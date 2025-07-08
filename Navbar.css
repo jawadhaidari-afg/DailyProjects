@@ -1,36 +1,104 @@
 body {
-    background-color:rgb(148, 171, 101);
+    background-color: rgb(148, 171, 101);
     margin: 0;
     padding: 0;
 }
+
 ul {
     background-color: rgb(66, 93, 169);
     overflow: none;
     list-style-type: none;
-    width:100%;
+    width: 100%;
     display: flex;
-    flex-direction:row;
-    /* margin-left: 5px; */
     padding-left: 10px;
+    position: fixed;
+
 }
-li a{
-    display:block;
+
+li a {
+    display: flex;
+    flex-direction: row;
     text-align: center;
     padding: 18px 20px;
     text-decoration: none;
     color: white;
+    transition: background-color 0.4s, color 0.4s;
 }
-li > img {
+
+li>img {
     background-color: rgb(66, 93, 169);
     position: fixed;
     top: 18px;
     right: 20px;
+    border-radius: 50px;
+    transition: background-color 0.4s, color 0.4s;
 }
+
 li a:hover {
-   background-color: rgb(48, 69, 131);
-    color:white
+    background-color: rgb(48, 69, 131);
+    color: white
 }
- .active-link {
-    background-color:rgb(52, 66, 108);
+
+img:hover {
+    background-color: rgb(48, 69, 131);
+}
+
+.active-link {
+    background-color: rgb(52, 66, 108);
     color: rgb(231, 231, 231);
+}
+
+#Dropdown {
+
+    display: flex;
+    width: 150px;
+    padding: 5px;
+}
+
+#Dropdown a {
+    display: none;
+    flex-direction: row;
+    text-decoration: none;
+    font-size: 16px;
+    color: whitesmoke;
+    text-align: center;
+    border: none;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+#Dropdown a:hover {
+    display: visible;
+    background-color: rgb(44, 67, 67);
+}
+
+.Uni_Name {
+    /* display: flex;
+    justify-content: center;
+    text-align: center; */
+    height: 1800px;
+    padding-top: 200px;
+    text-align: center;
+    color:#fafafa
+    /* cursor:pointer; */
+
+}
+
+.Con_SubMenu {
+    display: none;
+    padding: 14px 20px;
+    outline: none;
+    /* display: block; */
+    width: 150px;
+}
+
+input {
+    /* display: none; */
+    width: 130px;
+    padding: 5px;
+    gap: 2px;
+}
+
+.Con_SubMenu :hover {
+    display: visible;
+
 }
