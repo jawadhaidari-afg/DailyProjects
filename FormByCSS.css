@@ -12,7 +12,7 @@ div {
     margin-left: 5%;
     margin-top: 10%;
     border-radius: 10px;
-    box-shadow: 10px 15px 20px rgba(0, 0, 0), 0.5;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
 }
 input{
     position: relative;
@@ -54,7 +54,7 @@ div>ul>ul>li>a{
     width: 200px;
 }
 a{
-    /* display: none; *
+    /* display: none; */
 }
 a:focus{
     background-color: green;
