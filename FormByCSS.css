@@ -52,10 +52,9 @@ div>ul>ul>li>a{
     font-family: sans-serif;
     list-style-type:none;
     width: 200px;
-
 }
 a{
-    /* display: none; */
+    /* display: none; *
 }
 a:focus{
     background-color: green;
