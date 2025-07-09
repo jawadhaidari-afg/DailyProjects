@@ -1,9 +1,9 @@
 * {
-    background-color: rgb(216, 225, 232);
+    background-color: rgb(208, 216, 223);
 }
 
 .MainContainer {
-    background-color: antiquewhite;
+    background-color: rgb(198, 188, 175);
     width: 100%;
     height: 19em;
     /* display: flex;
@@ -12,10 +12,11 @@
     margin-top: 5em;
     /* padding: 0; */
     z-index: 1;
+    border: 1px solid black;
 }
 
 .ParentDiv {
-    background-color: aquamarine;
+    background-color: #ccd1c3;
     width: 90%;
     height: 18em;
     position: relative;
@@ -24,11 +25,11 @@
     right: 4.5rem;
     /* the left:4.5rem is not responsive */
     z-index: 2;
-
+    border: 1px solid black;
 }
 
 .ChildDiv {
-    background-color: bisque;
+    background-color: rgb(220, 210, 197);
     width: 90%;
     height: 17em;
     position: absolute;
@@ -36,7 +37,7 @@
     top: 0.5rem;
     text-align: center;
     z-index: 3;
-
+    border: 1px solid black;
 }
 
 textarea {
@@ -46,10 +47,10 @@ textarea {
     height: 13rem;
     width: 94%;
     border: none;
-    background-color: bisque;
+    background-color: rgb(220, 211, 201);
     resize: none;
     outline: none;
-    padding: 20px 30px;
+    padding: 20px 20px;
     text-align: left;
     z-index:4;
 }
@@ -81,7 +82,7 @@ h1, h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    /* background-color: aqua; */
     margin-top: 4rem;
     /* padding: 5px; */
 }
