@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="FormByCSS.css" />
 </head>
+
 <body>
     <div>
         <ul>
             <label for="firstname">First Name:</label>
-            <li style="inline-block"><input type="text" id="firstname" name="first_name" required class="firstname"></li>
+            <li><input type="text" id="firstname" name="first_name" required></li>
             <label for="lastname">Last Name:</label>
-            <li style="display: inline-block"><input type="text" id="lastname" name="lastname" required class="lastname"></li>
-            <li>dropdown</li>
-            <li><input type="submit" value="Submit" /></li>
+            <li><input type="text" id="lastname" name="lastname" required></li>
+            <ul>Select Your Ability:
+               <li> <a href="#">Pre Beginner</a></li>
+                <li><a href="#">Beginner</a></li>
+                <li><a href="#">Basic</a></li>
+                <li><a href="#">Junior</a></li>
+                <li><a href="#">Sinor</a></li>
+                <li><a href="#">Master</a></li>
+            </ul>
+            <li><input type="submit" value="Submit" class="Submit" /></li>
         </ul>
     </div>
 </body>
+
 </html>

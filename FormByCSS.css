@@ -8,28 +8,41 @@ div {
     justify-content: center; 
      align-items: center;  */
     width: 80%;
-    height: fit-content;
+    height: 15rem;
     margin-left: 10%;
     margin-top: 20%;
 }
 input{
-    display: flex;
+    position: relative;
     list-style-type: none;
-    /* text-decoration: none; */
     padding: 10px;
-    /* outline: none; */
-    background-color: transparent;
+    /* background-color: transparent; */
     /* border-bottom: 1px solid black; */
     border: 1px solid black;
     box-shadow: 2px 5% black;
     
+ }
+label{
+    font-size: 16px;
+    color: green;
+}
+.Submit{
+    padding: 14px 20px;
+    background-color: rgb(12, 106, 12);
+    color: whitesmoke;
+    font-size: 14px;
+    text-align: center;
+}
+div>ul>ul>li>{
+    display: block;
+    color: black;
+    padding: 10px;
+    background-color: whitesmoke;
+    text-decoration: none;
+    font-family: sans-serif;
+    list-style-type:none;
 
 }
-/* .firstname{
-    display: inline;
-    float: left;
+a{
+    /* display: none; */
 }
-.lastname{
-    display: inline;
-    float: right;
-} */
