@@ -16,11 +16,14 @@ body{
 }
 input{
     position: inline-block;
-    padding: 10px;
+    padding: 12px;
     background-color: transparent;
-    border:1px solid black;
+    border:0.1px solid rgba(0, 0, 0, 0.4) ;
     list-style: none;
-    width: 15em;
+    width: 20vw;
+    border-radius: 15px;
+    box-shadow: 0px 1px 3px black;
+    outline: 0;
  }
 
 label{
