@@ -1,5 +1,14 @@
 body{
-    background-color: rgb(224, 226, 226);
+    background-color: antiquewhite;
+    text-align: center;
+    
+}
+.Heading{
+     text-align: center;
+     position: absolute;
+     top: 5%;
+     left: 22vw;
+     right: 22vw;
 }
 .MainContainer {
     background-color: antiquewhite;
@@ -10,7 +19,7 @@ body{
     width: 70%;
     height: 20rem;
     margin-left: 18%;
-    margin-top: 18em;
+    margin-top: 20em;
     border-radius: 10px;
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
 }
