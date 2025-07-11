@@ -43,7 +43,9 @@ ul li ul.Dropdown {
 ul li a:hover {
     background-color: beige;
 }
-
-.Dropdown:hover{
+ul li a:hover ul.Dropdown {
     display: block;
 }
+/* .Dropdown:hover{
+    display: block;
+} */

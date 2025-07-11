@@ -7,10 +7,10 @@ body{
     /* display: flex;
     justify-content: center; 
      align-items: center;  */
-    width: 90%;
+    width: 70%;
     height: 20rem;
-    margin-left: 5%;
-    margin-top: 10%;
+    margin-left: 18%;
+    margin-top: 18em;
     border-radius: 10px;
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
 }
@@ -19,15 +19,16 @@ input{
     padding: 10px;
     background-color: transparent;
     border:1px solid black;
-    /* outline: none; */
-    /* box-shadow: 2px 5% black; */
-    
+    list-style: none;
+    width: 15em;
  }
+
 label{
     float: left;
     padding-bottom: 30px;
     padding-top: 10px;
     font-size: 18px;
+    
     
 }
 .Submit{
@@ -45,28 +46,38 @@ label{
 .Submit:hover{
     background-color:rgb(51, 159, 51) ;
 }
-.Dropdown{
-    display: block;
-    color: black;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: whitesmoke;
+#Choices{
+    position: absolute;
+    top: 150px;
+    left: 55px;
+    list-style: none;
+}
+#Choices a {
     text-decoration: none;
+    color: black;
+    font-size: 18px;
+    
+
+}
+.Dropdown{
+    background-color: whitesmoke;
     font-family: sans-serif;
-    width: 200px;
+    width: 66%;
     position: absolute;
     top: 130px;
     left: 55px;
     text-align: left;
+    list-style: none;
 }
- ul li a {
+.DropDownMenu {
      color:black;
-     
-     padding-top: 20px;
-     /* gap: 5px; */
+     text-decoration: none;
      font-size: 16px;
-     height: 100px;
      text-align: left;
+}
+.DropDownMenu a{
+    text-decoration: none;
+    display: none;
 }
  li > a:hover{
     background-color: green;
