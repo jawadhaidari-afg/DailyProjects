@@ -1,11 +1,17 @@
 .container{
     background-color: antiquewhite;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid rgba(100, 100, 100, 0.3);
     gap: 5px;
     padding: 10px;
+    height: 50vh;
+    width: 80vw;
+    margin-top: 20vh;
+    margin-left: 7vw;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.4);
+    border-radius:5px;
 }
 .conatiner_Gallery{
    width: 100%;
@@ -13,7 +19,16 @@
 }
 .container_Gallery img{
     display: inline-grid;
-    height: 60px;
-    width: 60px;
-    border: 1px solid green;
+    height: 80px;
+    width: 80px;
+    border: 1.5px solid rgba(222, 233, 222, 0.5);
+    box-shadow: 3px 3px 5px rgba(0, 0 ,0, 0.5);
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+.container_Gallery img:hover{
+    width: 77vw;
+    height:47vh;
+    transform: scale(1.04);
+    translate: 5px;
 }
