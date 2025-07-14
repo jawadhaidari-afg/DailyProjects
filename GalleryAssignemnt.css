@@ -1,0 +1,19 @@
+.container{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    gap: 5px;
+    padding: 10px;
+}
+.conatiner_Gallery{
+   width: 100%;
+   height: auto;  
+}
+.container_Gallery img{
+    display: inline-grid;
+    height: 60px;
+    width: 60px;
+    border: 1px solid green;
+}
