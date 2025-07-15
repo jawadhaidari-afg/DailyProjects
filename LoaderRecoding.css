@@ -1,5 +1,7 @@
 
-
+body{
+    overflow-y: scroll;
+}
 .Container{
     /* position: relative;  */
     display: flex;
@@ -33,7 +35,7 @@ h1{
     border-top: 8px solid rgb(255, 255, 255);
     border-bottom: 8px solid white;
     border-radius: 50%;
-    animation: circleLoader 2s ease infinite;
+    animation: circleLoader 2s linear infinite;
     /* position: absolute;
     top: 8vh;
     left: 45vw; */
@@ -113,4 +115,49 @@ h1{
         transform: scale(0.5);
         opacity: 0.3;
     }
+}
+
+        /* three type of loader */
+.MainDiv{
+    border: 1px solid rgb(187, 187, 201);
+    height: 200px;
+    width: 95%;
+    margin-left: 2.5vw;
+    border-radius: 5px;
+    margin-top: 3vh;
+    background-color: azure;
+    box-shadow: 5px 6px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Loader{
+    border: 10px solid azure;
+    border-top: 10px solid #a00ff0;
+    border-bottom: 10px solid #a00ff0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;   
+    animation: LoaderTypes 2s linear infinite;
+}
+.SecondType{
+    border-right: 10px solid #2b9733;
+}
+.ThirdType{
+    border-top: 10px solid rgb(0, 0, 0) ;
+    border-bottom: 10px solid red;
+    border-left: 10px solid green;
+    border-right: 10px solid whitesmoke;
+}
+@keyframes LoaderTypes {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+   
 }
