@@ -105,6 +105,8 @@ h1{
     0%, 100%{
         transform: scale(1.2);
         opacity: 1;
+        background-color: rgb(69, 69, 158);
+        border-color: rgb(254, 254, 254);
     }
     50% 
     {
