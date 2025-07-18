@@ -1,0 +1,18 @@
+
+.MainContainer{
+    background-color: rgba(107, 151, 181, 0.2);
+    width: 98%;
+    height: 60vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+}
+.Shortcuts{
+    border: 2px solid black;
+    width: 90%;
+    height: 200px;
+
+}
+
