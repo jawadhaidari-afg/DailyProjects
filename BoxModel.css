@@ -6,18 +6,18 @@
     background-color: rgb(225, 231, 231);
     width: 90%;
     height: 600px;
-    border: 1px solid black;
+    border: 2px solid black;
     margin:5vw;
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
     
 }
 .ContentBox{
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 5px;
     width: 70vw;
     height: 25vh;
-    margin-left: 6vw;
+    margin-left: 6.5vw;
     margin-top: 5vh;
     text-align: left;
     padding:25px;
@@ -28,11 +28,14 @@
     font-style: italic;
 
 }
+.Content_Box{
+    text-align: center;
+}
 .BorderBox{
-    border: 1px solid black;
+    border: 2px solid black;
     width: 70vw;
     height: 25vh;
-    margin-left: 8vw;
+    margin-left: 8.5vw;
     padding: 25px;
     margin-top: 5vh;
     border-radius: 5px;
@@ -40,6 +43,6 @@
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
     font-family:'Times New Roman', Times, serif;
     box-sizing: border-box;
-
+                                /*The Usage of box-sizing:border-box */
     
 }
