@@ -4,7 +4,10 @@
 }
 :root{
     --font-size:16px;
-    --color:rgba(0,123,220,0.8);
+    --color:rgba(178, 196, 210, 0.8);
+    --font-family:roman;
+    --font-size: 18px;
+    --font-weight: 600;
 }
 body{
     background-color: aliceblue;
@@ -32,7 +35,7 @@ h1{
     border: 1px solid black;
     width: 100%;
     height: auto;
-    background-color: whitesmoke;
+    background-color: var(--color);
     /* margin: 2vw; */
     /* border-radius: 5px; */
     position: relative;
@@ -49,6 +52,7 @@ h1{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
+    font-family: var(--font-family);
 }
 h3{
     position: absolute;
@@ -66,12 +70,13 @@ h3{
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     line-height: 1rem;
+    font-size: var(--18px);
    
 }
 .thirdHeading{
     position: absolute;
     top:61.5vh ;
-    left: 4vw;
+    left: 10vw;
 }
 .Third {
     position: absolute;
@@ -86,6 +91,7 @@ h3{
     border-bottom-right-radius: 5px;
     border-top-right-radius: 20px;
     line-height: 1.5rem;
+    font-weight: var(--font-weight);
     
 }
 ul > li {
