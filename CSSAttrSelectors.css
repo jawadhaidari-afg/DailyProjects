@@ -1,3 +1,17 @@
+*, *::before, *::after{
+    box-sizing:border-box;
+    overflow: scroll;
+}
+:root{
+    --font-size:16px;
+    --color:rgba(0,123,220,0.8);
+}
+body{
+    background-color: aliceblue;
+    margin: 10px;
+    box-sizing: border-box;
+
+}
 
 .MainContainer{
     background-color: rgba(107, 151, 181, 0.2);
@@ -10,38 +24,75 @@
     position: relative;
     border: 2px solid green;
 }
-.Shortcuts{
-    border: 1.5px solid black;
+h1{
+    text-align: center;
+
+}
+ .Shortcuts{
+    border: 1px solid black;
     width: 100%;
-    height: 35vh;
+    height: auto;
     background-color: whitesmoke;
-    margin: 2vw;
+    /* margin: 2vw; */
     /* border-radius: 5px; */
     position: relative;
 }
 .First{
     position: absolute;
-    top: 1vh;
-    left: 0vw;
+    top: 10vh;
+    left: 3vw;
     width: 55vw;
-    height: 20vh;
-    border-top-left-radius: 20px;
+    height: 23vh;
+    padding: 5px;
+    line-height: 1.4rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
 }
-.Second{
+h3{
     position: absolute;
-    top: 22vh;
-    left: 31vw;
+    top: 32.5vh; 
+    right: 5vw;
+}
+.Second {
+    position: absolute;
+    top: 39vh;
+    right: 2vw;
     width: 60vw;
+    padding-left: 20px;
     border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    line-height: 1rem;
+   
+}
+.thirdHeading{
+    position: absolute;
+    top:61.5vh ;
+    left: 4vw;
+}
+.Third {
+    position: absolute;
+    top: 68vh;
+    left: 3vw;
+    width: 50vw;
+    height: 24vh;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 20px;
+    line-height: 1.5rem;
     
 }
-.Third{
-    position: absolute;
-    top: 510px;
-    left: 0px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+ul > li {
+    list-style-type: none;
+    
+    
 }
-
+div > li{
+    list-style-type:none;
+}
