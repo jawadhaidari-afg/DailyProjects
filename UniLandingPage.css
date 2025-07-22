@@ -1,0 +1,14 @@
+
+
+*, *::after, *::after{
+    box-sizing: border-box;
+}
+body{
+    background-color: azure;
+}
+.mainContainer{
+    border: 1px solid black;
+    height: 400px;
+    width: 100%;
+    background-image: url();
+}
