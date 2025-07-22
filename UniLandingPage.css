@@ -8,7 +8,24 @@ body{
 }
 .mainContainer{
     border: 1px solid black;
-    height: 400px;
+    height: 700px;
     width: 100%;
-    background-image: url();
+                            /*Which one is better in this situation, either add img through CSS or HTMl?*/
+    /* background-image: url("UniLandingPageImage/TopMainImage.jpeg"); */
+    /* background-repeat: no-repeat; */
+    margin-top: 2em;
+    border-radius: 5px;
+
+}
+.mainContainer  img{
+    width: 400px;
+    height: 700px;
+                            /*Why the display:flex; doesn't work here?*/
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    left: 4rem;
+    width: 90%;
+    border: 5px;
 }
