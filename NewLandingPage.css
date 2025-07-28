@@ -1,0 +1,103 @@
+
+body{
+    background-color: powderblue;
+    /* box-sizing: border-box; */
+}
+
+.mainContainer{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    flex-direction: row;
+    width: 80%;
+    height: 70vh;
+    margin-left: 10vw;
+    margin-top: 1.5vh;
+}
+
+.mainContainer > .firstSec img{
+    position: relative;
+    top: 2em;
+    width: 80vw;
+    height: 75vh;
+    /* all: unset; */
+}
+
+.mainContainer > .firstSec h1{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10vh;
+    left: 28vw;
+}
+
+.mainContainer > .firstSec h3{
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 40vh;
+    left: 45vw;
+}
+ 
+.navigationBar{
+    z-index: 99;
+    /* background-color: yellow; */
+    /* padding: 15px 25px; */
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    gap:10px;
+    flex-wrap:wrap;
+    place-content: center;
+    
+
+    
+}
+.navigationBar a{
+    color: black;
+    text-decoration: none;
+    background-color: yellow;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-top: -150px;
+    
+    
+
+}
+
+.secondSec{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 0px; */
+}
+@media (min-width: 500px) and (max-width:900px){
+    .secondSec{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+@media (min-width: 901px) and (max-width:1080px){
+    
+}
+
+
+.mainContainer > .secondSec > div img{
+    position: inline-block;
+    top: 2em;
+    width: 40vw;
+    height: 35vh;
+}
+.itemA img{
+    border-radius: 10px;
+}
+.itemB
