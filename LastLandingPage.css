@@ -1,29 +1,36 @@
+body {
+    overflow-x: none;
+    box-sizing: border-box;
+}
 
-
-.mainContainer{
+.mainContainer {
     background-color: powderblue;
     /* border: 2px solid black; */
     margin: 3em;
     padding: 2rem;
 }
-.mainContainer > .firstSection {
+
+.mainContainer>.firstSection {
     /* border: 1px solid black; */
     width: 100%;
     height: 70vh;
     flex-wrap: wrap;
-    gap: 30px;      /*Why the gap P. doesn't work?*/
+    gap: 30px;
+    /*Why the gap P. doesn't work?*/
 }
-.mainContainer > .firstSection img{
+
+.mainContainer>.firstSection img {
     width: 80%;
-    height:auto;
+    height: auto;
     overflow: hidden;
     position: relative;
     left: 8vw;
     right: 8vw;
     opacity: 1;
-    
+
 }
-.mainContainer > .firstSection > h1{
+
+.mainContainer>.firstSection>h1 {
     color: white;
     text-align: center;
     font-size: 70px;
@@ -32,20 +39,22 @@
     left: 25%;
 
 }
-.mainContainer > .firstSection > P{
+
+.mainContainer>.firstSection>P {
     color: rgb(255, 255, 255);
     font-size: 40px;
     position: absolute;
     top: 50%;
     left: 44%;
 }
-.mainContainer > .firstSection > .listMenu {
-    position:absolute;
+
+.mainContainer>.firstSection>.listMenu {
+    position: absolute;
     top: 65%;
     left: 30%;
 }
 
-.mainContainer > .firstSection > .listMenu > a{
+.mainContainer>.firstSection>.listMenu>a {
     color: black;
     text-decoration: none;
     background-color: yellowgreen;
@@ -53,109 +62,488 @@
     border-radius: 20px;
     display: inline-grid;
     justify-content: space-between;
-   
-    
+
+
 }
-.mainContainer > .firstSection > h4{
-    color: white ;
+
+.mainContainer>.firstSection>h4 {
+    color: white;
     font-size: 30px;
-    font-family:cursive;
+    font-family: cursive;
     font-weight: 300;
     position: relative;
     left: 40%;
     top: -25%;
 }
-.mainContainer > .firstSection > h4 a{
+
+.mainContainer>.firstSection>h4 a {
     color: white;
     text-decoration-color: white;
 }
-.mainContainer > .firstSection > .listMenu > a:hover{
+
+.mainContainer>.firstSection>.listMenu>a:hover {
     background-color: yellow;
     color: black;
 }
 
- /*Second Section Part of University Landing Page*/
- .secondSection{
-     /* border: 1px solid black; */
-     /* background-color: #fcfCF7; */
-     padding: 10px;
-     width: 79%;
-     height: 70vh;
-     margin-top: 6em;
-     margin-left: 8vw;
-     display: grid;
-      grid-template-columns: 1fr 1fr;
-      place-content: start;
-    
- }
- .secondSection > h1 {
-   text-align: center;
-   font-size: 2.5rem;
- }
- .secondSection > img{
-     height: 300px;
-     width: 500px;
-     margin-left: 5vw;
-     border-radius: 20px;
- }
- .secondSection > p {
+/*Second Section Part of University Landing Page*/
+.secondSection {
+    /* border: 1px solid black; */
+    /* background-color: #fcfCF7; */
+    padding: 10px;
+    width: 79%;
+    height: 70vh;
+    margin-top: 6em;
+    margin-left: 8vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: start;
+
+}
+
+.secondSection>h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.secondSection>img {
+    height: 300px;
+    width: 500px;
+    margin-left: 5vw;
+    border-radius: 20px;
+}
+
+.secondSection>p {
     color: #353030;
-     margin-top: 5vh;
-     text-align: center;
-     font-size: 20p
- }
- .secondSection > div p{
-     color: rgb(14, 14, 16);
-     text-align: center;
-     /* background-color: #F4F1F8; */
-     font-size: 30px;
-     margin-top: -70px;
-     display: grid;
-     place-content: end center;
-     width: 300px;
-     height: 10px;
-     margin-left: 5vw;
-     line-height: 15px;
-     
-    
- }
- .secondSection > div .Arrow{
-     position: relative;
-     top: 260px;
-     left: 160p
- }
- .thirdSection{
-     /* margin: 2rem; */
-     border: 1px solid black;
-     background-color: #FDFDFD;
-     width: 80%;  
-     height: 1000px;
-     margin-left: 5vw;
-     
-        
- }
- .thirdSection > div{
-     background-color: orange;
-     width: 100%;
-     height: 300px;
- }
- .thirdSection > div > div {
-     background-color:darkblue;
-     margin-top: ;
-     width: 100%;
-     height: 300px;
- }
- .thirdSection >div >div  img{
-     height: 300px;
-     width: 200px;
-     padding-left: 10px
- }
- .thirdSection > div > div .Image{
-     background-color: green;
-     border: 1px solid black;
-     height: 300px;
-     width: 200px;
-     display: inline-flex;
-     place-content: flex-start center;
- 
- }
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 20p
+}
+
+.secondSection>div p {
+    color: rgb(14, 14, 16);
+    text-align: center;
+    /* background-color: #F4F1F8; */
+    font-size: 30px;
+    margin-top: -70px;
+    display: grid;
+    place-content: end center;
+    width: 300px;
+    height: 10px;
+    margin-left: 5vw;
+    line-height: 15px;
+
+
+}
+
+.secondSection>div .Arrow {
+    position: relative;
+    top: 260px;
+    left: 160p
+}
+
+/*third Section CSS Designing*/
+.thirdSection {
+    margin-top: 5rem;
+    border: 1px solid black;
+    background-color: rgb(3, 3, 70);
+    width: 80%;
+    height: 800px;
+    margin-left: 7vw;
+    /* gap: 10px; */
+    display: inline-grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.thirdSection>.Image {
+    height: 300px;
+    width: 250px;
+    margin-top: 10vh;
+    /* margin-left: ; */
+}
+
+/*How to use the nth-child instead class here?*/
+/* .thirdSection:nth-child(even)*/
+
+.thirdSection .A2 .A4 {
+    margin-top: 18vh;
+}
+
+/* .thirdSection . {
+    margin-top: 18vh;
+ } */
+.thirdSection .Image {
+    background-color: #fff;
+    border: 1px solid black;
+    height: 300px;
+    width: 100%;
+    display: inline-flex;
+    place-content: flex-start center;
+    margin-left: 1rem;
+    margin-top: 2rem;
+
+}
+
+.thirdSection>.Image {
+    height: 300px;
+    width: 200px;
+    color: #000;
+
+
+}
+
+.ResultI,
+.ResultII,
+.ResultIII,
+.ResultIV {
+    border-radius: 20px;
+}
+
+.thirdSection>.Image>h2 {
+    height: 300px;
+    width: 200px;
+    color: #000;
+    text-align: center;
+    position: relative;
+    top: 0rem;
+    left: 4rem;
+    font-size: 20px;
+
+}
+
+.thirdSection>.Image>p {
+    color: #000;
+    text-align: center;
+    position: relative;
+    top: 4rem;
+    left: -2rem;
+    font-size: 18px;
+
+}
+
+.thirdSection>.Image>a {
+    position: relative;
+    top: 17rem;
+    left: -6rem;
+    color: #000;
+
+}
+
+.thirdSection p {
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    left: 25rem;
+}
+
+.thirdSection p a {
+    color: white;
+    text-decoration-color: yellow;
+}
+
+/*FourthSection CSS Designing*/
+.fourthSection {
+    margin-top: 4rem;
+    margin-left: 7rem;
+    width: 80%;
+    height: 110vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid black;
+    background-color: rgba(138, 138, 142, 0.3);
+    opacity: 1;
+}
+
+.fourthSection>h1 {
+    text-align: center;
+    color: black;
+    font-size: 45px;
+    position: relative;
+    left: 18vw;
+
+}
+
+.fourthSection>img {
+    height: 600px;
+    width: 400px;
+    border-radius: 30px;
+    display: grid;
+    position: relative;
+    top: 8rem;
+    left: -33vw;
+}
+
+.fourthSection>div p {
+    color: black;
+    font-size: 18px;
+    display: block;
+    position: relative;
+    top: -30rem;
+    left: 45vw;
+    width: 300px;
+    padding-top: 1rem;
+    text-align: justify;
+}
+
+.fourthSection>.link {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    top: 20vh;
+    left: -5vw;
+}
+
+.fourthSection .link a {
+    color: white;
+}
+
+/*fifthSection CSS Designing*/
+
+.fifthSection {
+    height: 850px;
+    width: 80%;
+    border: 1px solid black;
+    margin-left: 7rem;
+    overflow: hidden
+}
+
+.fifthSection div {
+    background-color: rgb(3, 3, 70);
+    height: 800px;
+    width: 60%;
+    position: relative;
+    left: 40%;
+}
+
+.fifthSection div img {
+    margin-top: 7vh;
+    position: relative;
+    left: -60%;
+    width: 820px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.fifthSection div div {
+    width: 450px;
+    height: 450px;
+    background-color: orange;
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    position: relative;
+    left: -300px;
+    top: -138px;
+}
+
+.fifthSection div h1 {
+    color: black;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 40px;
+}
+
+.fifthSection div p {
+    color: #000;
+    padding-left: 20px;
+    text-align: left;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.fifthSection p {
+    margin-top: -10px;
+    font-size: 20px;
+}
+
+.fifthSection input {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background-color: darkblue;
+    /*How to set size of input types in css?*/
+    color: white;
+    /*Input Type color didn't work*/
+    border: none;
+}
+
+.fifthSection div .secondImage {
+    position: absolute;
+    top: 400px;
+    left: 510px;
+    background-color: transparent;
+
+
+}
+
+.sixthSection {
+    background-color: bisque;
+    height: 800px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.sixthSection #blueDark {
+    width: 100%;
+    height: 450px;
+    background-color: rgb(3, 3, 70);
+
+}
+
+.sixthSection #darkOrange {
+    width: 50%;
+    height: 400px;
+    background-color: orange;
+    border-radius: 15px;
+    position: relative;
+    top: -200px;
+    left: 440px;
+}
+
+.sixthSection div img {
+    width: 830px;
+    height: 580px;
+    position: relative;
+    top: -850px;
+    left: 40px;
+    border-radius: 15px;
+}
+
+.cardImage {
+    /* background-color: antiquewhite; */
+    width: 55%;
+    margin-left: 12%;
+    margin-top: -290px;
+    position: absolute;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    /*How to eleminate the space between three cards through grid_template-columns?*/
+
+
+}
+
+.cardImage .circle {
+    height: 300px;
+    width: 250px;
+    /* border: 1px solid black; */
+    margin-left: 6%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.cardImage div h1 {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 40px;
+
+}
+
+.cardImage .circle img {
+
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: relative;
+    left: 35px;
+    top: 20px;
+}
+
+.cardImage div p {
+    font-size: 20px;
+    position: relative;
+    left: 135%;
+    top: -5px;
+}
+
+/*seventh Section CSS Designing*/
+.seventhSection {
+    /* background-color: aquamarine; */
+    width: 70%;
+    height: 200px;
+    margin-left: 15%;
+    border: 1px solid black;
+}
+.seventhSection h1{
+    padding: 10px;
+    font-size: 35px;
+}
+.seventhSection p{
+    padding-left: 10px;
+    margin-top: -15px;
+    font-size: 22px;
+    color: rgba(0, 0, 0,0.5);
+    width: 99.5%;
+}
+.eigthSection{
+    background-color: orange;
+    border: 1px solid black;
+    width: 70%;
+    height: 700px;
+    margin-left: 15%;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.eigthSection div {
+    border:transparent;
+    width: 250px;
+    height: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 25px;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: rgb(250, 241, 241);
+    position: relative;
+    top: -100px;
+    margin-left: 5px;
+}
+.eigthSection h2{
+    font-weight: 100;
+    font-size: 32px;
+}
+.lastSection{
+    width: 70%;
+    height: 400px;
+    background-color: darkblue;
+    margin-top: -22px;
+    margin-left: 15%;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.lastSection h1{
+    color: white;
+    width: 100%;
+    border: 1px solid white;
+}
+.lastSection p{
+    color: white;
+    width: 100%;
+    border: 1px solid white;
+    font-size: 20px;
+
+}
+.lastSection div form{
+    width: 100%;
+    height: 300px;
+    background-color: bisque;
+
+}
+.lastSection div form input[type="text"]{
+    padding: 10px;
+    width: 90%;
+}
+

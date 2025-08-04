@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  align-items: end;           /* Align items to the bottom */
+  justify-content: center;
+  width: 200px;
+  height: 150px;
+  border: 2px solid #333;
+  background: #f0f0f0;
+  overflow: hidden;           /* To visualize overflow clipping */
+}
+
+/* Tall item */
+.item {
+  width: 80px;
+  height: 250px;              /* Taller than the container */
+  background: tomato;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode: horizontal-tb;  /* Rotate text to fit */
+}
+
+/* Safe alignment */
+.safe {
+  align-items: unsafe center;  
+  text-align: center;     /* Will shift to stay fully visible */
+}
+
+/* Unsafe alignment */
+.unsafe {
+  align-items: unsafe center;
+  text-align: center;     /* Will overflow if necessary */
+}
+
+
+

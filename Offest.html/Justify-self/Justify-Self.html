@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Justify-Self.css" />
+    <style>
+        .Container{
+            background-color: powderblue;
+            width: 80%;
+            height: 700px;
+            border: 1px solid black;
+            display: grid;
+            justify-items: normal; 
+             grid-template-rows: repeat(4, 1fr);
+             overflow: hidden;
+
+        }
+        .Container div pre{
+            color: green;
+            text-align: left;
+            position: relative;
+            left: -10px;
+            gap: 10px;
+            border: 1px solid black;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            
+        }
+        .Container div h3{
+            padding-left: 10px;
+            text-align: center;
+            color: white;
+            background-color: purple;
+            /* width: 200px; */
+            height: 30px;
+            /* width: 200px; */
+            
+        }
+        .Container > .items7{
+            font-size: 30px;
+            justify-self:right;
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <h1>Justify-self Property</h1>
+            <div>
+                <pre>Syntax:
+                    justify-self: auto | normal | stretch | start | right | <br>center | left | end | overflow-alignment <br>| baseline alignment | initial | inherit;</pre>
+                <h3 class="items1">Auto</h3>
+                <h3 class="items2">Normal</h3>
+                <h3 class="items3">Stretch</h3>
+                <h3 class="items4">Start</h3>
+                <h3 class="items5">End</h3>
+                <h3 class="items6">Right</h3>
+                <h3 class="items7">Center</h3>
+                <h3 class="items8">Left</h3>
+                <h3 class="items">overflow-alignment</h3>
+                <h3 class="items">Baseline-alignment</h3>
+            </div>
+       
+    </div>
+
+</body>
+</html>

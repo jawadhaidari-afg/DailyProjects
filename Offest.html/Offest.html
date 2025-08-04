@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offset</title>
+    <style>
+        /* @keyframes orbit {
+        0% {
+            offset-distance: 0%;
+            offset-rotate: 0deg;
+        }
+        100% {
+            offset-distance: 100%;
+            offset-rotate: 360deg;
+        }
+    }
+        .container{
+            width:100%;
+            height:600px;
+            background-color:powderblue;
+        } 
+    
+    #planet {
+        width: 60px;
+        height: 60px;
+        background-color: #0000A0;
+        border-radius: 50%;
+        position: absolute;
+        animation: orbit 6s linear infinite;
+        offset: path('M 200 200 m -100, 0 a 100,100 0 1,0 200,0 a 100,100 0 1,0 -200,0') auto;
+    }
+    #sun {
+        width: 100px;
+        height: 100px;
+        background-color: #ffd700;
+        border-radius: 50%;
+        position: absolute;
+        left: 28%;
+        top: 33%;
+        transform: translate(-50%, -50%);
+    }
+    #check{
+        accent-color: green;
+    }
+    input[type="radio"]{
+        accent-color: rgb(175, 102, 102);
+    }
+
+/*User Selector Section*/
+    /* .userSelector{
+        width: 100%;
+        height: 610px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        background-color: powderblue;
+    }
+      .userSelector >.User{
+        width: 80%;
+        height: 100px;
+        border: 1px dotted black;
+        margin-left: 10%;
+        padding: 10px;
+        text-align: justify;
+        color: black;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+        /*user-select: none|auto>::before/::after|text|all|contain*/
+    /* .userSelector >.Selector1{
+        background-color: aliceblue;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    .userSelector >.Selector2{
+        background-color: antiquewhite;
+        -webkit-user-select: auto;
+        user-select: auto;
+    }
+    .userSelector >.Selector3{
+        background-color: rgb(249, 249, 244);
+        -webkit-user-select: text;
+        user-select: text;
+    }
+    .userSelector >.Selector4{
+        background-color: aquamarine;
+        -webkit-user-select: all;
+        user-select: all;
+    }
+    .userSelector >.Selector5{
+        background-color: cadetblue;
+        -webkit-user-select: contain;
+        user-select: contain;
+    } */ */ 
+
+
+    body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  align-items: end;           /* Align items to the bottom */
+  justify-content: center;
+  width: 200px;
+  height: 150px;
+  border: 2px solid #333;
+  background: #f0f0f0;
+  overflow: hidden;           /* To visualize overflow clipping */
+}
+
+/* Tall item */
+.item {
+  width: 80px;
+  height: 250px;              /* Taller than the container */
+  background: tomato;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-rl;  /* Rotate text to fit */
+}
+
+/* Safe alignment */
+.safe {
+  align-items: safe end;       /* Will shift to stay fully visible */
+}
+
+/* Unsafe alignment */
+.unsafe {
+  align-items: unsafe end;     /* Will overflow if necessary */
+}
+
+    </style>
+</head>
+<body>
+    <!-- <div class= "container">
+    <div id="sun"></div>
+    <div id="planet"></div>
+    </div> -->
+    <!-- <div>
+        <input type="checkbox" id="check" name="cheched" checked>
+        <label for="checked"></label> <br>
+        <input type="radio" id="radio1" name="checked" >
+        <label for="radio1">Male</label> <br>
+        <input type="radio" id="radio2" name="checked2" >
+        <label for="radio2">Female</label>
+    </div> <br>
+    <div class="userSelector">
+        <div class="User Selector1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ab nostrum doloremque quis temporibus cupiditate dignissimos nihil, exercitationem fugit, sed rerum fuga molestiae eveniet adipisci autem sunt, quidem similique iusto.</div>
+        <div class="User Selector2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ab nostrum doloremque quis temporibus cupiditate dignissimos nihil, exercitationem fugit, sed rerum fuga molestiae eveniet adipisci autem sunt, quidem similique iusto.</div>
+        <div class="User Selector3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ab nostrum doloremque quis temporibus cupiditate dignissimos nihil, exercitationem fugit, sed rerum fuga molestiae eveniet adipisci autem sunt, quidem similique iusto.</div>
+        <div class="User Selector4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ab nostrum doloremque quis temporibus cupiditate dignissimos nihil, exercitationem fugit, sed rerum fuga molestiae eveniet adipisci autem sunt, quidem similique iusto.</div>
+        <div class="User Selector5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ab nostrum doloremque quis temporibus cupiditate dignissimos nihil, exercitationem fugit, sed rerum fuga molestiae eveniet adipisci autem sunt, quidem similique iusto.</div>
+    </div>
+    <br> -->
+    
+
+<body>
+
+<h2>Safe vs Unsafe Overflow Alignment</h2>
+
+<div class="container safe">
+  <div class="item">SAFE</div>
+</div>
+
+<div class="container unsafe">
+  <div class="item">UNSAFE</div>
+</div>
+
+</body>
+</html>
