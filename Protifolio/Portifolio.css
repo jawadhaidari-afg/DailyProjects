@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgba(0, 0, 0, 1);
+}
+.Sections{
+    background-color: lightgray;
+    width: 90%;
+    height: 1000px;
+    border: 1px solid black;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.Sections .Section1{
+    width: 100%;
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+.Sections .Section1{
+    div   
+}
