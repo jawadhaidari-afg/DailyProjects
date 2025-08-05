@@ -21,7 +21,8 @@ body{
 }
 .Sections .Section1 #leftSpan{
     color: rgb(212, 207, 207);
-    background-color: rgba(0, 0, 0, 0.23);
+    background-color: rgba(0, 0, 0, 0.1);
+    font-family: sans-serif; /*Needs work on Fontfamily*/
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 5px;
@@ -56,5 +57,28 @@ body{
     padding: 15px;
     font-size: 50;
     font-weight: thin;
-    
+}
+.Sections .Section1 > div h4, h1, p{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: left;
+    position: relative;
+    top: 100px;
+    margin-left: 100px;
+}
+.Sections .Section1 > div h4{
+    font-size: 20px;
+    color: rgb(182, 125, 19);
+    font-weight: thin;
+}    
+.Sections .Section1 > div h1{
+    color: rgba(250, 250, 250, 0.8);
+    font-size: 50px; 
+    margin-top: -2px;  
+}
+.Sections .Section1 > div h1, p{
+    color:rgba(250, 250, 250, 0.7);
+    line-height: 24px;
+    text-align: left;
+    font-weight: 100;
 }
