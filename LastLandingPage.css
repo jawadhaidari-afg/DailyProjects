@@ -4,9 +4,9 @@ body {
 }
 
 .mainContainer {
-    background-color: powderblue;
+    /* background-color: powderblue; */
     /* border: 2px solid black; */
-    margin: 3em;
+    /* margin: 3em; */
     padding: 2rem;
 }
 
@@ -377,7 +377,7 @@ body {
 
 .fifthSection p {
     margin-top: -10px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .fifthSection input {
@@ -388,19 +388,23 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 20px;
-    background-color: darkblue;
+    background-color: rgb(2, 2, 117);
     /*How to set size of input types in css?*/
-    color: white;
+    color: rgba(245, 245, 245, 0.866);
     /*Input Type color didn't work*/
     border: none;
+    font-weight: 100;
 }
+.fifthSection input:hover{
+    color: rgba(255, 255, 255, 0.501);
+}
+
 
 .fifthSection div .secondImage {
     position: absolute;
     top: 400px;
     left: 510px;
     background-color: transparent;
-
 
 }
 
@@ -472,8 +476,8 @@ body {
 
 .cardImage .circle img {
 
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
     position: relative;
     left: 35px;
@@ -486,6 +490,9 @@ body {
     left: 135%;
     top: -5px;
 }
+.cardImage div p a{
+    color: #000;
+}
 
 /*seventh Section CSS Designing*/
 .seventhSection {
@@ -493,7 +500,8 @@ body {
     width: 70%;
     height: 200px;
     margin-left: 15%;
-    border: 1px solid black;
+    padding-top: 60px;
+    /* border: 1px solid black; */
 }
 .seventhSection h1{
     padding: 10px;
@@ -508,9 +516,9 @@ body {
 }
 .eigthSection{
     background-color: orange;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 70%;
-    height: 700px;
+    height: 620px;
     margin-left: 15%;
     margin-top: 150px;
     display: grid;
@@ -529,7 +537,7 @@ body {
     background-color: rgb(250, 241, 241);
     position: relative;
     top: -100px;
-    margin-left: 5px;
+    margin-left: 20px;
 }
 .eigthSection h2{
     font-weight: 100;
@@ -538,9 +546,9 @@ body {
 .lastSection{
     background-color:darkblue;
     width: 70%;
-    height: 500px;
+    height: 300px;
     margin-left: 15%;
-    margin-top: -22px;
+    margin-top: -24px;
     
 }
 .lastSection div{
@@ -583,6 +591,7 @@ body {
     margin-left: 25px;
 
 }
+/*Should add the social media Icon from Material.com*/
 .lastSection .socialMedia a{
    color: black;
    text-decoration: none;
@@ -658,4 +667,8 @@ body {
     background-color: darkorange;
     border-radius: 10px;
 
+}
+.lastSection form input[type*=submit]:hover{
+    background-color: darkblue;
+    color: white;
 }
