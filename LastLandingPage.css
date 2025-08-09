@@ -180,10 +180,10 @@ body {
 
 }
 .thirdSection img[src*="UniLandingPageImage/StudentImage.jpeg"] {
-    margin-top: -30px;
+    margin-top: -20px;
 }
 .thirdSection img[src*="UniLandingPageImage/WhatsApp Image 2025-07-22 at 07.30.27.jpeg"]{
-    margin-top: -30px;
+    margin-top: -20px;
 }
 .thirdSection .Image {
     height: 290px;
@@ -195,24 +195,17 @@ body {
 /*How to use the nth-child instead class here?*/
 /* .thirdSection:nth-child(even)*/
 
-/* .thirdSection .A2 .A4 {
-    position: relative;
-    top: -20px;
-    width: 20px;
-    height: 20px;
-} */
-
 .thirdSection .Images {
     background-color: #fff;
     border: 1px solid black;
-    height: 300px;
-    width: 120%;
+    /* height: 300px; */
+    /* width: 150%; */
     display: inline-flex;
-    place-content: flex-start center;
+    /* place-content: flex-start center; */
     margin-left: 1rem;
-    margin-top: 2rem;
-    border: 2px solid green;
+    margin-top: 2.2rem;
     border-radius: 20px;
+    
 
 } 
 
@@ -220,37 +213,39 @@ body {
     height: 300px;
     width: 200px;
     color: #000;
+    
 }
-
-
-.thirdSection .Images h2 {
+/*Why can't add width to the h2 to add only in one line?*/
+.thirdSection .Images h2 { 
     height: 100px;
-    width: 100%;
-    color: #000;
-    text-align: left;
-    position: relative;
-    top: 0rem;
-    left: 4rem;
-    font-size: 20px;
-    border: 1px solid black;
-
-
-}
-
-.thirdSection>.Image>p {
+    width: 300px;
+    padding: 0px;
+    margin: 0px;
     color: #000;
     text-align: center;
     position: relative;
-    top: 4rem;
+    top: 1rem;
+    left: 4rem;
+    font-size: 20px;
+    /* border: 1px solid black; */
+
+
+}
+
+.thirdSection .Images p {
+    color: #000;
+    text-align: center;
+    position: relative;
+    top: 6rem;
     left: -2rem;
     font-size: 18px;
 
 }
 
-.thirdSection>.Image>a {
+.thirdSection .Images a {
     position: relative;
-    top: 17rem;
-    left: -6rem;
+    top: 16.5rem;
+    left: -5.5rem;
     color: #000;
 
 }
@@ -273,15 +268,16 @@ body {
     margin-top: 4rem;
     margin-left: 7rem;
     width: 80%;
-    height: 110vh;
+    height: 120vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border: 2px solid black;
+    /* border: 2px solid black; */
     background-color: rgba(138, 138, 142, 0.3);
     opacity: 1;
+    
 }
 
-.fourthSection>h1 {
+.fourthSection h1 {
     text-align: center;
     color: black;
     font-size: 45px;
@@ -290,7 +286,7 @@ body {
 
 }
 
-.fourthSection>img {
+.fourthSection img {
     height: 600px;
     width: 400px;
     border-radius: 30px;
@@ -299,8 +295,8 @@ body {
     top: 8rem;
     left: -33vw;
 }
-
-.fourthSection>div p {
+/*Should add the mark icon from awesome.com*/
+.fourthSection div p {
     color: black;
     font-size: 18px;
     display: block;
@@ -312,7 +308,7 @@ body {
     text-align: justify;
 }
 
-.fourthSection>.link {
+.fourthSection .link {
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
@@ -325,13 +321,14 @@ body {
 }
 
 /*fifthSection CSS Designing*/
-
 .fifthSection {
     height: 850px;
     width: 80%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-left: 7rem;
-    overflow: hidden
+    overflow: hidden;
+    
+
 }
 
 .fifthSection div {
