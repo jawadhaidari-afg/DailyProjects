@@ -10,16 +10,16 @@ body {
     padding: 2rem;
 }
 
-.mainContainer>.firstSection {
+.mainContainer .firstSection {
     /* border: 1px solid black; */
     width: 100%;
     height: 70vh;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 30px
     /*Why the gap P. doesn't work?*/
 }
 
-.mainContainer>.firstSection img {
+.mainContainer .firstSection img {
     width: 80%;
     height: auto;
     overflow: hidden;
@@ -27,10 +27,10 @@ body {
     left: 8vw;
     right: 8vw;
     opacity: 1;
-
+   
 }
 
-.mainContainer>.firstSection>h1 {
+.mainContainer .firstSection h1 {
     color: white;
     text-align: center;
     font-size: 70px;
@@ -40,49 +40,58 @@ body {
 
 }
 
-.mainContainer>.firstSection>P {
+.mainContainer .firstSection  h5{
     color: rgb(255, 255, 255);
     font-size: 40px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 44%;
+    font-size: 28px;
+    letter-spacing: 2.5px;
+    font-weight: 200;
 }
 
-.mainContainer>.firstSection>.listMenu {
+.mainContainer .firstSection .listMenu {
     position: absolute;
     top: 65%;
     left: 30%;
 }
 
-.mainContainer>.firstSection>.listMenu>a {
+.mainContainer .firstSection .listMenu a {
     color: black;
     text-decoration: none;
-    background-color: yellowgreen;
-    padding: 15px 25px;
-    border-radius: 20px;
-    display: inline-grid;
-    justify-content: space-between;
+    background-color: orange;
+    padding: 12px 55px;
+    border-radius: 25px;
+    /* display: inline-grid;
+    justify-content: space-between; */
+    margin-left: 50px;
+    position: relative;
+    left: -250px;
+    top: 80px;
 
 
 }
 
-.mainContainer>.firstSection>h4 {
+.mainContainer .firstSection p {
     color: white;
-    font-size: 30px;
-    font-family: cursive;
+    font-size: 22px;
+    /* font-family: cursive; */
     font-weight: 300;
     position: relative;
     left: 40%;
     top: -25%;
+    font-weight: 100;
 }
 
-.mainContainer>.firstSection>h4 a {
+.mainContainer .firstSection p a {
     color: white;
     text-decoration-color: white;
+    
 }
 
 .mainContainer>.firstSection>.listMenu>a:hover {
-    background-color: yellow;
+    background-color: whitesmoke;
     color: black;
 }
 
@@ -93,7 +102,7 @@ body {
     padding: 10px;
     width: 79%;
     height: 70vh;
-    margin-top: 6em;
+    margin-top: 12em;
     margin-left: 8vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -101,115 +110,130 @@ body {
 
 }
 
-.secondSection>h1 {
+.secondSection h1 {
     text-align: center;
     font-size: 2.5rem;
+    font-weight: 520;
 }
 
-.secondSection>img {
-    height: 300px;
+.secondSection img {
+    height: 350px;
     width: 500px;
     margin-left: 5vw;
     border-radius: 20px;
 }
 
-.secondSection>p {
+.secondSection p {
     color: #353030;
     margin-top: 5vh;
     text-align: center;
-    font-size: 20p
+    font-size: 20px;
 }
-
-.secondSection>div p {
+.secondSection #Lists{
+    /* border: 1px solid black; */
+    width: 300px;
+    height: 450px;
+    /* background-color: gray; */
+    position: relative;
+    top: -440px;
+    margin-left: 110px;
+    
+}
+.secondSection #Lists p {
     color: rgb(14, 14, 16);
     text-align: center;
     /* background-color: #F4F1F8; */
-    font-size: 30px;
-    margin-top: -70px;
-    display: grid;
-    place-content: end center;
+    font-size: 20px;
+    font-weight: bold;
+    /* margin-top: -60px; */
+    /* display: grid;
+    place-content: end center; */
+    display: black;
+    position: relative;
+    /* left: 50px; */
     width: 300px;
-    height: 10px;
-    margin-left: 5vw;
-    line-height: 15px;
-
+    /* margin-left: 5vw; */
+    line-height: 5px;
 
 }
 
-.secondSection>div .Arrow {
+.secondSection div .Arrow {
     position: relative;
-    top: 260px;
-    left: 160p
+    top: 10px;
+    left: 100px;
 }
 
 /*third Section CSS Designing*/
 .thirdSection {
-    margin-top: 5rem;
-    border: 1px solid black;
+    margin-top: 12rem;
+    /* border: 1px solid black; */
     background-color: rgb(3, 3, 70);
     width: 80%;
     height: 800px;
-    margin-left: 7vw;
+    margin-left: 7.5vw;
     /* gap: 10px; */
     display: inline-grid;
     justify-content: space-around;
     grid-template-columns: repeat(4, 1fr);
+    padding-top: 70px;
+    padding-left: 12px;
 
 }
-
-.thirdSection>.Image {
-    height: 300px;
-    width: 250px;
+.thirdSection img[src*="UniLandingPageImage/StudentImage.jpeg"] {
+    margin-top: -30px;
+}
+.thirdSection img[src*="UniLandingPageImage/WhatsApp Image 2025-07-22 at 07.30.27.jpeg"]{
+    margin-top: -30px;
+}
+.thirdSection .Image {
+    height: 290px;
+    width: 215px;
     margin-top: 10vh;
-    /* margin-left: ; */
+    margin-left:10px;
 }
 
 /*How to use the nth-child instead class here?*/
 /* .thirdSection:nth-child(even)*/
 
-.thirdSection .A2 .A4 {
-    margin-top: 18vh;
-}
+/* .thirdSection .A2 .A4 {
+    position: relative;
+    top: -20px;
+    width: 20px;
+    height: 20px;
+} */
 
-/* .thirdSection . {
-    margin-top: 18vh;
- } */
-.thirdSection .Image {
+.thirdSection .Images {
     background-color: #fff;
     border: 1px solid black;
     height: 300px;
-    width: 100%;
+    width: 120%;
     display: inline-flex;
     place-content: flex-start center;
     margin-left: 1rem;
     margin-top: 2rem;
-
-}
-
-.thirdSection>.Image {
-    height: 300px;
-    width: 200px;
-    color: #000;
-
-
-}
-
-.ResultI,
-.ResultII,
-.ResultIII,
-.ResultIV {
+    border: 2px solid green;
     border-radius: 20px;
-}
 
-.thirdSection>.Image>h2 {
+} 
+
+.thirdSection .Images {
     height: 300px;
     width: 200px;
     color: #000;
-    text-align: center;
+}
+
+
+.thirdSection .Images h2 {
+    height: 100px;
+    width: 100%;
+    color: #000;
+    text-align: left;
     position: relative;
     top: 0rem;
     left: 4rem;
     font-size: 20px;
+    border: 1px solid black;
+
 
 }
 
@@ -515,35 +539,126 @@ body {
     font-size: 32px;
 }
 .lastSection{
+    background-color:darkblue;
     width: 70%;
-    height: 400px;
-    background-color: darkblue;
-    margin-top: -22px;
+    height: 500px;
     margin-left: 15%;
-    flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    margin-top: -22px;
+    
 }
-.lastSection div div{
-    background-color: gray;
-    border: 1px solid red;
-    border-radius: 20px;
+.lastSection div{
+    background-color: white;
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+    border-radius: 30px;
     position: relative;
     top: -200px;
-    left: 50px;
-    width: 100%;
-    height: 100px;
 }
-.lastSection div h1{
-    color: white;
+.lastSection div div{
+    /* background-color: white; */
+    width: 40%;
+    height: 350px;
+    margin-left: -5px;
+    border-radius: .1px;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+.lastSection div div h1{
     font-size: 35px;
-    padding-left: 10px;
-}
-.lastSection div div img{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    color: transparent;
-}
+    padding-left: 40px;
+    padding-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+}
+.lastSection div div p{
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 23px;
+    color:gray;
+    line-height: 30px;
+}
+.lastSection .socialMedia{
+    width: 60%;
+    height: 50px;
+    /* border: 1px solid black; */
+    margin-left: 25px;
 
+}
+.lastSection .socialMedia a{
+   color: black;
+   text-decoration: none;
+   padding: 15px;
+   border: 1px solid black;
+   background-color: rgba(255, 255, 255, 0.1);
+   border-radius: 12px;
+   font-weight: bold;
+   font-size: 14px;
+
+}
+.lastSection form{
+    position: relative;
+    top: -280px;
+    left: 400px;
+    width: 130%;
+    height: 350px;
+    /* border: 1px solid black; */
+    /* background-color: white; */
+    padding-top: 50px;
+    
+}
+.lastSection form input{
+    padding: 10px;
+    margin: 10px;
+    padding: 15px;
+    font-size: 15px;
+
+}
+.lastSection form label{
+    font-size: 18px;
+}
+.lastSection form input[type*=text]{
+    width: 90%;
+    background-color: whitesmoke;
+    border: transparent;
+    outline: none;
+    border-radius: 5px;
+    
+}
+.lastSection form label[for*=name]{
+    padding-left: 12px;
+    font-weight: 100;
+}
+.lastSection form input[type*=tel]{
+    width: 40%;
+    background-color: whitesmoke;
+    border: transparent;
+    border-radius: 5px;
+}
+.lastSection form label[for*=phone]{
+    padding-left: 12px;
+}
+.lastSection form input[type*=email]{
+    background-color: whitesmoke;
+    width:41%;
+    border: transparent;
+    border-radius: 5px;
+    position: relative;
+    top: -68px;
+    left: 230px;
+}
+.lastSection form label[for*=email]{
+    position:relative;
+    top: -42px;
+    padding-left: -1px;
+}
+.lastSection form input[type*=submit]{
+    position: relative;
+    top: -55px;
+    width: 95%;
+    border: transparent;
+    background-color: darkorange;
+    border-radius: 10px;
+
+}
