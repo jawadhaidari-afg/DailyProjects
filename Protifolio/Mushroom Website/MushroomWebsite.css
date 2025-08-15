@@ -6,28 +6,32 @@
 :root{
     --bg-color:rgb(111, 8, 111) ;
     --color: black;
-    --font-size:18px;
+    --font-size:19px;
     
 }
 body{
     margin-left: 10%;
     margin-right: 10%;
     padding: 20px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .Container{
+    margin-top: 10%;
     background-color: var(--bg-color);
     width: 100%;
-    height: 850px;
-     background-image: url(1c7ecaab5ee2b5ba2c40cd2efa367bc5.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: auto;
+   
     position: center;
-    margin-top: -20%;
+    margin-top: -15%;
     overflow: hidden;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+    border-radius: 5px;
 }
 
 .Container .mainPage{
+      background-image: url(1c7ecaab5ee2b5ba2c40cd2efa367bc5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     position: center;
     display: inline-flex;
     flex-direction: row;
@@ -39,20 +43,28 @@ body{
 
 .Container .mainPage span{
     display: flex;
-    align-items: end;
+    align-items: start;
     justify-content: start;
     width: 50%;
     color: #077821;
     font-size: 22px;
     margin-top: 20%;
-    background-color: blue;
+    /* background-color: blue; */
 }
 .Container .mainPage a{
-    padding: 40px 50px 12px 10px;
+    padding: 10px 50px 12px 10px;
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    background-color: green;
+    /* background-color: green; */
     color: rgb(0, 0, 0);
-    margin-top: 20%;
+    margin-top: 10%;
+    transition: .2s ease;
+}
+.Container .mainPage a:hover{
+    font-size: 18px;
+    color: blue;
+
 }
 .Container .headerSection{
     display: grid;
@@ -71,11 +83,12 @@ body{
 }
 .Container .headerSection p a{
    color: black;
-   font-size: 20px;
+   font-size: 22px;
 }
 .Container .headerSection p{
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     font-size: var(--font-size);
+    /* font-size: 19px; */
 }
 .Container .headerSection input{
     padding: 10px;
@@ -86,10 +99,24 @@ body{
     outline: none;
     border: none;
     transition: .2s ease;
+    margin-top: 7%;
 
 }
 .Container .headerSection input:hover{
     background-color: blue;
     color: white;
     width:20.5%;
+}
+
+/*MainContent Section*/
+.mainContent{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(4,600px);
+    justify-content: center;
+    align-items: center;
+}
+.mainContent img{
+    width: 200px;
+    height: 400px;
 }
