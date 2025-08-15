@@ -16,56 +16,71 @@ body{
     /* border: 1px solid black; */
 }
 .Container{
-    margin-top: 10%;
-    background-color: var(--bg-color);
+    /* margin-top: 10%; */
+    /* background-color: var(--bg-color); */
     width: 100%;
     height: auto;
-   
-    position: center;
-    margin-top: -15%;
+    /* position: center; */
+    /* margin-top: -15%; */
     overflow: hidden;
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
-    border-radius: 5px;
+   
 }
 
 .Container .mainPage{
-      background-image: url(1c7ecaab5ee2b5ba2c40cd2efa367bc5.jpg);
+    background-image: url(1c7ecaab5ee2b5ba2c40cd2efa367bc5.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    position: center;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    /* align-content: ; */
-    background-color: transparent;
-    width:100%;
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+    /* position: flex; */
+    /* z-index: -99; */
+    /* box-shadow: 10px 10px 15px rgba(0,0,0,0.5); */
+    /* border-radius: 5px; */
 }
+/* .Container .mainPage a{
+    background-color: rgb(97, 78, 54);
+    text-decoration: none;
 
+} */
 .Container .mainPage span{
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: start;
-    width: 50%;
+    padding-left:100px;
+    width: 40%;
     color: #077821;
     font-size: 22px;
-    margin-top: 20%;
+    /* margin-top: 20%; */
     /* background-color: blue; */
+    /* border: 1px solid blue; */
 }
-.Container .mainPage a{
+.Container .mainPage #anchor{
     padding: 10px 50px 12px 10px;
-    display: flex;
+    width: 75.6%;
+    /* border: 1px solid black; */
+    display: inline-flex;
+    justify-content: start;
     align-items: center;
-    text-decoration: none;
-    /* background-color: green; */
-    color: rgb(0, 0, 0);
-    margin-top: 10%;
     transition: .2s ease;
+    position: fixed;
+    top: 0;
+    margin-left: -20px;
+    /* background-color:#E7E6C4; */
 }
-.Container .mainPage a:hover{
+.Container .mainPage #anchor a{
+    color: black;
+    /* background-color: blue; */
+    padding: 12px 30px 12px 30px;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.Container .mainPage #anchor a:hover{
     font-size: 18px;
     color: blue;
-
 }
+
 .Container .headerSection{
     display: grid;
     grid-template-columns: repeat(1,50%);
@@ -109,13 +124,61 @@ body{
 }
 
 /*MainContent Section*/
-.mainContent{
+ .mainContent{
     display: grid;
     grid-template-columns: repeat(4, 300px);
     grid-template-rows: repeat(4,600px);
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items:center;
+    width: 100%;
+    margin-top:50px;
+
+} 
+/* .mainContent{
+    display: grid;
+    grid: "header header header header" 200px
+           "content content content content" 400px;
+           padding: 10px;
+           gap: 20px;
+           justify-content: center;
+           align-items: center;
+
+
+           
 }
+.Image1 {
+    grid-area:header;
+}
+.Image2{
+    grid-area:header;
+}
+.Image3 {
+    grid-area: header;
+}
+.Image4{
+    grid-area: header;
+}
+.Image5{
+    grid-area:content;
+}
+.Image6{
+    grid-area:content;
+}
+.Image7{
+    grid-area:content;
+}
+.Image8{
+    grid-area:content;
+}
+
+.Container .images{
+     margin-top: 850px;
+     display: flex;
+    place-content: center center;
+} */
+
+
+
 .mainContent img{
     width: 200px;
     height: 400px;
