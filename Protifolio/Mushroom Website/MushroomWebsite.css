@@ -18,16 +18,23 @@ body{
 .Container{
     background-color: var(--bg-color);
     width: 100%;
-    height: 650px;
+    height: 850px;
+     background-image: url(1c7ecaab5ee2b5ba2c40cd2efa367bc5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: center;
+    margin-top: -20%;
+    overflow: hidden;
 }
+
 .Container .mainPage{
+    position: center;
     display: inline-flex;
     flex-direction: row;
     justify-content: flex-end;
     /* align-content: ; */
     background-color: transparent;
     width:100%;
-
 }
 
 .Container .mainPage span{
@@ -37,10 +44,52 @@ body{
     width: 50%;
     color: #077821;
     font-size: 22px;
+    margin-top: 20%;
+    background-color: blue;
 }
 .Container .mainPage a{
     padding: 40px 50px 12px 10px;
     text-decoration: none;
-    color: white;
+    background-color: green;
+    color: rgb(0, 0, 0);
+    margin-top: 20%;
+}
+.Container .headerSection{
+    display: grid;
+    grid-template-columns: repeat(1,50%);
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.Container .headerSection div{
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+   color:#000;
+   
+}
+.Container .headerSection #color{
+    color:blue;
+}
+.Container .headerSection p a{
+   color: black;
+   font-size: 20px;
+}
+.Container .headerSection p{
+    margin-top: 1.5rem;
+    font-size: var(--font-size);
+}
+.Container .headerSection input{
+    padding: 10px;
+    display: inline-flex;
+    width: 20%;
+    margin-top: 5%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    transition: .2s ease;
 
+}
+.Container .headerSection input:hover{
+    background-color: blue;
+    color: white;
+    width:20.5%;
 }
