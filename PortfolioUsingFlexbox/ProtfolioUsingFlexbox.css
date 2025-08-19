@@ -50,13 +50,15 @@ body{
 /* top section image*/
 
 #textSection{
-    border: 1px solid black;
-    background-color: silver;
+    margin-left: 5rem;
+    padding-top: 5rem;
+    border: 1px solid rgb(255, 255, 255);
+    /* background-color: silver; */
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-direction: column;
     width: 50%;
-    
+    margin-left: 5rem;
 }
 
 #textSection h2{
@@ -70,7 +72,24 @@ body{
     color: #fff;
     font-size: 40px;
     letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    margin-top: -0.8rem;
+
 }
 #textSection p{
-    color: green;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 30;
+
+}
+#textSection input{
+    background-color: orange;
+    padding: 12px;
+    width: 10rem;
+    border-radius:20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 10rem;
 }
