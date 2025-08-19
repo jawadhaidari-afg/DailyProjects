@@ -1,0 +1,76 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.firstsection{
+    background-color: rgba(0, 0, 0, 0.81);
+}
+/* navbar Styles */
+
+.navbar{
+    background-color: rgb(35, 23, 23);
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    padding: 1.5rem 3rem 1.5rem ;
+    align-items: flex-end;
+}
+
+.navbar a{
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 15px 50px 30px 15px;
+    transition: .2s ease in;
+}
+
+.navbar a:hover{
+    color: whitesmoke;
+    font-size: 17px;
+}
+/* left top text */
+#portTop{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 15rem;
+    top: 6rem;
+    font-size: 2rem;
+}
+
+/* right top text*/
+#contTop{
+    color: white;
+    display: inline-flex;
+    justify-content: end;
+    padding-left: 2rem;
+}
+ 
+/* top section image*/
+
+#textSection{
+    border: 1px solid black;
+    background-color: silver;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 50%;
+    
+}
+
+#textSection h2{
+    color: orange;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#textSection h1{
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+#textSection p{
+    color: green;
+}
